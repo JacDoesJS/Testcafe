@@ -1,0 +1,20 @@
+{
+  "name": "testcafe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe ./tests --c ./testcaferc.js --reporter html:reports/testAutomationReports.html",
+    "allureOpen": "allure generate allure/allure-results --clean -o allure/allure-report && allure open allure/allure-report"
+  },
+  "keywords": [],
+  "author": "Dr Jac",
+  "license": "ISC",
+  "devDependencies": {
+    "testcafe": "^2.3.0"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.20.1",
+    "testcafe-reporter-html": "^1.4.6"
+  }
+}
